@@ -25,7 +25,7 @@ if check_password():
     st.title("🌐 SDN POP 点服务查询系统")
     @st.cache_data
     def load_data():
-        return pd.read_csv('机房清单.xlsx )
+       return pd.read_csv('机房清单.xlsx')
 
     df = load_data()
     query = st.text_input("🔍 输入城市、机房名或地址关键词：")
